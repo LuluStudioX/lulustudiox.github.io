@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --dark-bg: #1E1E1E;
+  --dark-text: #E0E0E0;
+  --dark-input-bg: #333333;
+  --dark-input-border: #8ae7796b;
+  --dark-accent: #37ff14e8;
+  --dark-results-bg: rgba(60, 60, 60, 0.9);
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  font-family: "Roboto", sans-serif;
+}
+
+.calculator-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.results {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 90%;
+  padding: 1rem;
+  background-color: var(--dark-results-bg);
+  border-radius: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+.input-group:last-child {
+  margin-right: 0;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input[type=number],
+.custom-select {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  border-top-left-radius: 8px !important;
+  border: 1px solid var(--dark-input-border);
+  background-color: var(--dark-input-bg);
+  color: var(--dark-text);
+  transition: border-color 0.3s ease;
+}
+input[type=number]:focus,
+.custom-select:focus {
+  border-color: var(--dark-accent);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  display: none;
+}
+.custom-select .select-wrapper {
+  position: relative;
+}
+.custom-select .select-selected {
+  background-color: var(--dark-input-bg);
+  color: var(--dark-text);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.custom-select .select-items {
+  position: absolute;
+  background-color: var(--dark-input-bg);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  max-height: 3000px;
+  overflow-y: auto;
+  border: 1px solid var(--dark-input-border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+.custom-select .select-items div {
+  color: var(--dark-text);
+  padding: 0.1rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.custom-select .select-items div:hover {
+  background-color: var(--dark-accent);
+  color: var(--dark-bg);
+}
+.custom-select .select-hide {
+  display: none;
+}
+.custom-select .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: var(--dark-text) transparent transparent transparent;
+}
+.custom-select .select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--dark-text) transparent;
+  top: 7px;
+}
+
+button {
+  background-color: var(--dark-accent);
+  color: var(--dark-bg);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #32b74a;
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buffs-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  background-color: rgba(19, 16, 16, 0.9215686275);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.buff-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.buff-option input[type=checkbox] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.buff-option label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
