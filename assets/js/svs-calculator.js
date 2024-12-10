@@ -5,27 +5,42 @@ document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('.tab-button');
   const contents = document.querySelectorAll('.tab-content');
 
+  // Function to show the selected tab
+  function showTab(selectedTab) {
+    contents.forEach((content) => {
+      content.style.display = content.id === selectedTab ? 'block' : 'none';
+    });
+
+    // Update active tab styling
+    tabs.forEach((t) => t.classList.remove('active'));
+    const activeTab = Array.from(tabs).find(
+      (t) => t.getAttribute('data-tab') === selectedTab
+    );
+    if (activeTab) {
+      activeTab.classList.add('active');
+    }
+  }
+
+  // Load the active tab from localStorage
+  const activeTab = localStorage.getItem('activeTab') || 'dashboard';
+  showTab(activeTab);
+
+  // Add click event listeners to tabs
   tabs.forEach((tab) => {
     tab.addEventListener('click', () => {
       const selectedTab = tab.getAttribute('data-tab');
-      contents.forEach((content) => {
-        content.style.display = content.id === selectedTab ? 'block' : 'none';
-      });
-
-      // Update active tab styling
-      tabs.forEach((t) => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      // Optionally, you can initialize calculations for the selected tab here
-      // initCalculationsForTab(selectedTab);
-
+      showTab(selectedTab);
+      // Save the active tab in localStorage
+      localStorage.setItem('activeTab', selectedTab);
       // Update total points in the dashboard
       updateTotalPoints();
     });
   });
 
-  // Show the dashboard by default
-  document.getElementById('dashboard').style.display = 'block';
+  // Show the dashboard by default if no active tab is set
+  if (!localStorage.getItem('activeTab')) {
+    showTab('dashboard');
+  }
 
   function updateTotalPoints() {
     const day1Points = parseInt(
@@ -52,6 +67,3 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Total Points updated:', total);
   }
 });
-
-// Log when styles are loaded
-console.log("Stylesheet 'svs_styles.css' loaded.");
