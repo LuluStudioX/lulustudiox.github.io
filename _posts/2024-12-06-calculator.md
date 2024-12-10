@@ -2,7 +2,8 @@
 layout: post
 title: "Troop Training Cost Calculator"
 date: 2024-12-06
-categories: [Tools, Calculator]
+categories: [WhiteoutSurvival, Tools, Calculator]
+tags: [Troops Calculator]
 ---
 
 <div class="calculator-container">
