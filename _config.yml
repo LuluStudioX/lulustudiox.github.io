@@ -9,37 +9,37 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Europe/Copenhagen
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: LuluStudio # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: A doc site for my homelab and other passions # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://lulustudiox.github.io'"
 
 github:
-  username: github_username # change to your GitHub username
+  username: LuluStudioX # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+# twitter:
+#   username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Constantin Cosmin Alupului
+  # email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    # - https://twitter.com/username # change to your Twitter homepage
+    - https://github.com/lulustudiox # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://scontent.faar2-2.fna.fbcdn.net/v/t39.30808-1/333037563_722794329509647_463828629529492652_n.jpg?stp=c17.17.183.183a_dst-jpg_p200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=K7KYUySsAmYQ7kNvgH2t-8i&_nc_zt=24&_nc_ht=scontent.faar2-2.fna&_nc_gid=Ag3mLXpsExaHxy0BnmjTL-8&oh=00_AYBXAq4I-hW8ohJ8jCXSLoZPViX2jpI_BWo6ERYDYSag2w&oe=67565930
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -195,6 +195,7 @@ defaults:
 
 sass:
   style: compressed
+  sass_dir: _assets/calculator  #since i added the calculator one
 
 compress_html:
   clippings: all

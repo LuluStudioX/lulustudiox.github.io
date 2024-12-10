@@ -1,0 +1,444 @@
+
+
+
+/* Body and Global Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #111, #222);
+  }
+  
+  /* Form Container */
+  .form-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  /* Heading Styling */
+  h1 {
+    text-align: center;
+    color: #28a745;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  
+  /* Form Elements */
+  input[type="number"],
+  input[type="text"],
+  select,
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #28a745;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #28a745;
+    color: #fff;
+    border: 1px solid #28a745;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.8);
+  }
+  
+  /* Custom Select Dropdown */
+  .custom-select {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .custom-select::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 16px;
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  .custom-select.open::before {
+    top: -18px;
+    font-size: 12px;
+    color: #28a745;
+  }
+  
+  .custom-select .select-selected {
+    padding: 12px 15px;
+    background-color: #444;
+    color: #e0e0e0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-select .select-selected:hover {
+    background-color: #555;
+  }
+  
+  .custom-select .select-items {
+    position: absolute;
+    background-color: #444;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #28a745;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 99;
+    display: none;
+  }
+  
+  .custom-select.open .select-items {
+    display: block;
+  }
+  
+  .custom-select .select-items div {
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  .custom-select .select-items div:hover {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  /* Resource Section */
+  #resource-container {
+    background: rgba(40, 167, 69, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #resourceDetails {
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #222;
+    border-radius: 12px;
+    color: #28a745;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /////////////////////////////
+  /// /////////////////////
+  /// /////////////////////
+  /// ////////////////////
+  /// Design 1
+  ////////////////////////////
+  /// //////////////////////
+  /// ///////////////////
+  /// //////////////////
+  
+  
+  
+  // ####################
+  // # Global Styling #
+  // ####################
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Start from top */
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #141414, #1f1f1f);
+    /* Dark gradient background */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #28a745;
+    font-size: 2.5rem; // Larger font for premium feel
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+  // ####################
+  // # Form Container Styling #
+  // ####################
+  #troopTrainingForm {
+    width: 100%;
+    max-width: 700px;
+    /* Slightly larger form for wide screens */
+    margin: 0 auto;
+    padding: 30px 40px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #troopTrainingForm:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    /* Slight hover effect */
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 25px;
+  }
+  
+  legend {
+    font-size: 1.6rem;
+    color: #28a745;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"],
+  select,
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #28a745;
+    outline: none;
+    background-color: #333;
+  }
+  
+  input[type="number"]:hover,
+  select:hover {
+    background-color: #333;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.8);
+  }
+  
+  // ####################
+  // # Resource Section Styling #
+  // ####################
+  .hidden {
+    display: none;
+  }
+  
+  #toggleResourcesBtn {
+    background-color: #444;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  #toggleResourcesBtn:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+  }
+  
+  #resource-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    color: #fff;
+  }
+  
+  #resourceDetails {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .custom-select::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #ccc;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .custom-select.open::before {
+    top: -15px;
+    font-size: 1rem;
+    color: #28a745;
+  }
+  
+  .custom-select .select-selected {
+    position: relative;
+    display: block;
+    padding: 15px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-select .select-selected:hover {
+    background-color: #333;
+  }
+  
+  .custom-select .select-selected:after {
+    content: '\25BC';
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+  
+  .custom-select.open .select-selected:after {
+    content: '\25B2';
+  }
+  
+  .custom-select .select-items {
+    position: absolute;
+    background-color: #444;
+    border: 2px solid #28a745;
+    width: 100%;
+    z-index: 99;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .custom-select.open .select-items {
+    display: block;
+  }
+  
+  .custom-select .select-items div {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  .custom-select .select-items div:hover {
+    background-color: #28a745;
+    color: #fff;
+  }

@@ -1,0 +1,203 @@
+{
+    "infantry": [
+      {
+        "tier": 1,
+        "stats": {
+          "power": 3,
+          "defense": 4,
+          "lethality": 1,
+          "load": 108,
+          "attack": 1,
+          "health": 6,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 36,
+          "wood": 27,
+          "coal": 7,
+          "iron": 2
+        }
+      },
+      {
+        "tier": 2,
+        "stats": {
+          "power": 4,
+          "defense": 5,
+          "lethality": 2,
+          "load": 124,
+          "attack": 2,
+          "health": 7,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 58,
+          "wood": 44,
+          "coal": 10,
+          "iron": 3
+        }
+      },
+      {
+        "tier": 3,
+        "stats": {
+          "power": 5,
+          "defense": 6,
+          "lethality": 3,
+          "load": 142,
+          "attack": 3,
+          "health": 8,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 92,
+          "wood": 69,
+          "coal": 17,
+          "iron": 4
+        }
+      },
+      {
+        "tier": 4,
+        "stats": {
+          "power": 9,
+          "defense": 7,
+          "lethality": 4,
+          "load": 164,
+          "attack": 4,
+          "health": 9,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 120,
+          "wood": 90,
+          "coal": 21,
+          "iron": 5
+        }
+      },
+      {
+        "tier": 5,
+        "stats": {
+          "power": 13,
+          "defense": 8,
+          "lethality": 5,
+          "load": 188,
+          "attack": 5,
+          "health": 10,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 156,
+          "wood": 117,
+          "coal": 27,
+          "iron": 6
+        }
+      },
+      {
+        "tier": 6,
+        "stats": {
+          "power": 20,
+          "defense": 9,
+          "lethality": 6,
+          "load": 217,
+          "attack": 6,
+          "health": 11,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 186,
+          "wood": 140,
+          "coal": 33,
+          "iron": 7
+        }
+      },
+      {
+        "tier": 7,
+        "stats": {
+          "power": 28,
+          "defense": 10,
+          "lethality": 7,
+          "load": 249,
+          "attack": 7,
+          "health": 12,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 279,
+          "wood": 210,
+          "coal": 49,
+          "iron": 11
+        }
+      },
+      {
+        "tier": 8,
+        "stats": {
+          "power": 38,
+          "defense": 11,
+          "lethality": 8,
+          "load": 287,
+          "attack": 8,
+          "health": 13,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 558,
+          "wood": 419,
+          "coal": 98,
+          "iron": 21
+        }
+      },
+      {
+        "tier": 9,
+        "stats": {
+          "power": 50,
+          "defense": 12,
+          "lethality": 9,
+          "load": 330,
+          "attack": 9,
+          "health": 14,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 1394,
+          "wood": 1046,
+          "coal": 244,
+          "iron": 51
+        }
+      },
+      {
+        "tier": 10,
+        "stats": {
+          "power": 66,
+          "defense": 13,
+          "lethality": 10,
+          "load": 379,
+          "attack": 10,
+          "health": 15,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 2788,
+          "wood": 2091,
+          "coal": 488,
+          "iron": 102
+        }
+      },
+      {
+        "tier": 11,
+        "stats": {
+          "power": 114,
+          "defense": 21,
+          "lethality": 14,
+          "load": 400,
+          "attack": 15,
+          "health": 21,
+          "speed": 11
+        },
+        "resource_cost": {
+          "meat": 6970,
+          "wood": 5228,
+          "coal": 1220,
+          "iron": 253
+        }
+      }
+    ]
+  }
+  
