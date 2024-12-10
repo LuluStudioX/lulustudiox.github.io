@@ -1,0 +1,27 @@
+/* Add custom styles here */
+.tabs {
+  display: flex;
+}
+
+.tab-button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab-content {
+  display: none; /* Hide all tabs initially */
+}
+
+.tab-content.active {
+  display: block; /* Show active tab */
+}
+
+.calculator-section {
+  margin-top: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+console.log ("svs_style was loaded")
