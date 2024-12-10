@@ -5,80 +5,91 @@ date: 2024-12-06
 categories: [Tools, Calculator]
 ---
 
-<script src="{{ '/assets/calculator/trainingcalculator.js' | relative_url }}"></script>
-<!-- <link rel="stylesheet" href="{{ '/assets/calculator_styles.scss' | relative_url }}"> -->
-<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-
-
-
-<div class="form-container">
-  <h1>Troop Training Calculator</h1>
-  <form id="troopTrainingForm">
-
-    <!-- Row 1 -->
-    <div class="form-row">
-      <div>
-        <label for="troopTypeSelect">Troop Type</label>
-        <select id="troopTypeSelect">
-          <option value="infantry">Infantry</option>
-          <option value="lancers">Lancers</option>
-          <option value="marksmen">Marksmen</option>
-        </select>
+<div class="calculator-container">
+   <form id="calculatorForm">
+      <div class="label-row">
+         <div class="input-group">
+            <label for="trainingSpeed">Training Speed:</label>
+            <input type="number" id="trainingSpeed" step="0.01" required>
+         </div>
+         <div class="input-group">
+            <label for="trainingCapacity">Training Capacity:</label>
+            <input type="number" id="trainingCapacity" required>
+         </div>
       </div>
-      <div>
-        <label for="tierSelect">Troop Tier</label>
-        <select id="tierSelect">
-          <!-- Dynamically populated using JS -->
-        </select>
-      </div>
-      <div>
-        <label for="buffs">Buffs</label>
-        <select id="buffs" multiple>
-          <option value="vp">Vice President (70% Speed, 200 Capacity)</option>
-          <option value="minister">Minister of Education (75% Speed, 300 Capacity)</option>
-        </select>
-      </div>
-    </div>
 
-    <!-- Row 2 -->
-    <div class="form-row">
-      <div>
-        <label for="trainingSpeed">Training Speed (%)</label>
-        <input type="number" id="trainingSpeed" placeholder="Enter training speed">
+      <!-- Buffs Section -->
+      <div class="label-row">
+         <button type="button" id="toggleBuffs">Select Buffs</button>
       </div>
-      <div>
-        <label for="trainingCapacity">Training Capacity</label>
-        <input type="number" id="trainingCapacity" placeholder="Enter capacity">
+      
+
+      <!-- Popup for Buff Selection -->
+      <div id="buffsPopup" style="display:none;" class="buffs-popup">
+        <h3>Select Buffs</h3>
+        <!-- Existing buff options -->
+        <div class="buff-option">
+            <input type="checkbox" id="growthSkill">
+            <label for="growthSkill">Growth Skill (200% Speed & Capacity)</label>
+        </div>
+        <div class="buff-option">
+            <input type="checkbox" id="presidentSkill">
+            <label for="presidentSkill">President Skill (30% speed)</label>
+        </div>
+        <div class="buff-option">
+            <input type="checkbox" id="vicePresidentSkill">
+            <label for="vicePresidentSkill">Vice President (15% speed)</label>
+        </div>
+        <div class="buff-option">
+            <input type="checkbox" id="ministerOfEducation">
+            <label for="ministerOfEducation">Minister of Education (75% speed, +200 capacity)</label>
+        </div>
+        <!-- New custom buff section -->
+        <div class="buff-option custom-buff">
+            <input type="checkbox" id="customBuff">
+            <label for="customBuff">Custom Buff</label>
+            <div class="custom-buff-inputs" style="display:none;">
+                <input type="number" id="customSpeedBuff" placeholder="Speed %" min="0">
+                <input type="number" id="customCapacityBuff" placeholder="Capacity" min="0">
+            </div>
+        </div>
+        <button type="button" id="submitBuffs">Submit Selection</button>
+        <button type="button" id="closeBuffsPopup">Close</button>
       </div>
-    </div>
 
-    <!-- Row 3 -->
-    <div class="form-row">
-      <div>
-        <label for="troopsToTrain">Wanted Troops</label>
-        <input type="number" id="troopsToTrain" placeholder="Enter troops to train">
+      <div class="label-row">
+         <div class="input-group">
+            <label for="troopType">Troop Type:</label>
+            <div class="custom-select">
+               <select id="troopType" required>
+                  <option value="infantry">Infantry</option>
+                  <option value="lancer">Lancer</option>
+                  <option value="marksmen">Marksmen</option>
+               </select>
+            </div>
+         </div>
+
+         <div class="input-group">
+            <label for="troopTier">Troop Tier:</label>
+            <div class="custom-select">
+               <select id="troopTier" required>
+                  <!-- Options will be populated dynamically -->
+               </select>
+            </div>
+         </div>
       </div>
-      <div>
-        <label for="speedups">Speedups <span class="tooltip" title="Add total minutes of speedups.">(?)</span></label>
-        <input type="number" id="speedups" placeholder="Enter speedups in minutes">
+
+      <div class="label-row">
+         <label for="wantedTroops">Wanted Troops:</label>
+         <input type="number" id="wantedTroops" required>
       </div>
-    </div>
 
-    <button id="calculateButton" type="button">Calculate</button>
-    <button id="toggleResourcesBtn" type="button">See Resources Needed</button>
+      <button type="submit">Calculate</button>
+   </form>
 
-  </form>
-
-  <div id="resource-container" class="hidden">
-    <h3>Resource Details</h3>
-    <div id="resourceDetails">No data available.</div>
-  </div>
-
-  <div id="result"></div>
+   <!-- Results displayed here -->
+   <div id="results" style="display:none;" class="results"></div>
 </div>
 
-
-
-
-
-
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+<script src="{{ '/assets/js/calculator.js' | relative_url }}"></script>
