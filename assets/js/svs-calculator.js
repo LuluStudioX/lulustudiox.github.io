@@ -67,3 +67,25 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Total Points updated:', total);
   }
 });
+
+// // Fetch Furnance
+// fetch('path/to/furnace_tiers.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         // Example function to get value based on From and To tiers
+//         function getFurnaceTierValue(fromTier, toTier) {
+//             const tierData = data.find(item => item.From === fromTier.toString());
+//             if (tierData) {
+//                 const value = tierData[toTier.toString()];
+//                 return parseInt(value); // Convert string to integer
+//             } else {
+//                 console.error("Invalid From Tier:", fromTier);
+//                 return null;
+//             }
+//         }
+
+//         // Example usage:
+//         const value = getFurnaceTierValue(30, 35); // Get value from Tier 30 to Tier 35
+//         console.log("Furnace Tier Value:", value);
+//     })
+//     .catch(error => console.error('Error fetching data:', error));
