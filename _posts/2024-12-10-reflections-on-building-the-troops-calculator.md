@@ -3,7 +3,7 @@ layout: post
 title: "Reflections on Building the Troops Calculator: Where Passion Meets Purpose"
 date: 2024-12-10
 categories: [Learning]
-tags: [Troops Calculator, About Me]
+tags: [troops calculator, about me]
 ---
 
 
