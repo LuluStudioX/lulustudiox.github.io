@@ -195,7 +195,6 @@ defaults:
 
 sass:
   style: compressed
-  sass_dir: _assets/calculator  #since i added the calculator one
 
 compress_html:
   clippings: all
