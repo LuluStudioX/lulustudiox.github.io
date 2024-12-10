@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+}
+.tldr-section {
+    position: relative;
+    height: 50vh; /* Set height to half the viewport height for a smaller section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f1eee8; /* Light text for better contrast */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the TL;DR section */
+}
+
+.tldr-section::before {
+    content: "";
+    position: absolute; /* Position it absolutely within the section */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../icons/tldr.webp'); /* Set the background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    filter: brightness(20%); /* Dim the brightness of the background image */
+    z-index: -1; /* Place behind content */
+}
+
+.tldr-section h2 {
+    font-size: 2em; /* Slightly smaller heading */
+}
+
+.tldr-section p {
+    font-size: 1.1em; /* Adjusted text size for readability */
+}
+
+.icon-tech {
+    font-size: 24px; /* Adjust size */
+    margin-right: 8px; /* Space between icon and text */
+   // color: #8f8d8d; Icon color
+}
