@@ -35,19 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
     if (savedWantedTroops) document.getElementById('wantedTroops').value = savedWantedTroops;
 
     // Fetch JSON data
-    const baseTimePromise = fetch('/assets/data/base_time.json')
+    const baseTimePromise = fetch('/assets/data/woc_base_data/base_time.json')
       .then(response => response.json())
       .catch(error => console.error('Error fetching base_time.json:', error));
     
-    const infantryPromise = fetch('/assets/data/infantry.json')
+    const infantryPromise = fetch('/assets/data/woc_base_data/infantry.json')
       .then(response => response.json())
       .catch(error => console.error('Error fetching infantry.json:', error));
     
-    const lancerPromise = fetch('/assets/data/lancer.json')
+    const lancerPromise = fetch('/assets/data/woc_base_data/lancer.json')
       .then(response => response.json())
       .catch(error => console.error('Error fetching lancer.json:', error));
     
-    const marksmenPromise = fetch('/assets/data/marksmen.json')
+    const marksmenPromise = fetch('/assets/data/woc_base_data/marksmen.json')
       .then(response => response.json())
       .catch(error => console.error('Error fetching marksmen.json:', error));
     
