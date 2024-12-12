@@ -92,5 +92,5 @@ toc: false
    <div id="results" style="display:none;" class="results"></div>
 </div>
 
-<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/troops_calculator.css' | relative_url }}">
 <script src="{{ '/assets/js/calculator.js' | relative_url }}"></script>

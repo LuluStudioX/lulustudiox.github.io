@@ -174,12 +174,32 @@ document.addEventListener('DOMContentLoaded', function() {
                         return num.toString();
                     }
 
+                    // Creates a buffInfo variable that's only populated when buffs are applied.
+                    let buffInfo = '';
+                    if (speedBuffPercentage > 0) {
+                        buffInfo += `Your effective Training Speed is <strong><i><span data-tooltip="Base: ${trainingSpeed}% + Buffs: ${speedBuffPercentage}%">${totalSpeedPercentage}%</span></i></strong><br>`;
+                    }
+                    if (capacityBuffPercentage > 0 || flatCapacityIncrease > 0) {
+                        let capacityTooltip = `Base: ${trainingCapacity}`;
+                        if (capacityBuffPercentage > 0) {
+                            capacityTooltip += ` + Buff: ${capacityBuffPercentage}%`;
+                        }
+                        if (flatCapacityIncrease > 0) {
+                            capacityTooltip += ` + Flat Increase: ${flatCapacityIncrease}`;
+                        }
+                        buffInfo += `Your effective Training Capacity is <strong><i><span data-tooltip="${capacityTooltip}">${Math.floor(effectiveTrainingCapacity)}</span></i></strong><br>`;
+                    }
+
+
                     // Update results in #results section
                     results.innerHTML = `
-                        You can train: <strong><i>${maxCapacity}</i></strong> <strong>${troopType.charAt(0).toUpperCase() + troopType.slice(1)}</strong> Tier <strong><i>${troopTier}</i></strong> per session.<br>
-                        Training <strong><i>${adjustedWantedTroops}</i></strong> troops will take <strong><i>${totalWantedTroopTimeFormatted}</i></strong>.<br>
-                        It will take <strong><i>${sessionsNeeded}</i></strong> Sessions and costs:<br>
-                        🥩 ${formatNumber(rawResourceValues.meat)} | 🪵 ${formatNumber(rawResourceValues.wood)} | ⚒️ ${formatNumber(rawResourceValues.coal)} | 🪨 ${formatNumber(rawResourceValues.iron)}.
+                    Training <strong><i>${adjustedWantedTroops}</i></strong> 
+                    <strong>${troopType.charAt(0).toUpperCase() + troopType.slice(1)}</strong> 
+                    Tier <strong><i>${troopTier}</i></strong> will take <strong><i><u><br>${totalWantedTroopTimeFormatted}</u></i></strong>.<br><br>
+                    It will take <strong><i>${sessionsNeeded}</i></strong> Sessions and costs:<br>
+                        🥩 ${formatNumber(rawResourceValues.meat)} | 🪵 ${formatNumber(rawResourceValues.wood)} | 
+                        ⚒️ ${formatNumber(rawResourceValues.coal)} | 🪨 ${formatNumber(rawResourceValues.iron)}<br><br>
+                        ${buffInfo}
                     `;
                     
                     results.style.display = 'block';
