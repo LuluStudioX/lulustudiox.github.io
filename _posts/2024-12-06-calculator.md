@@ -56,7 +56,6 @@ toc: false
             </div>
         </div>
         <button type="button" id="submitBuffs">Submit Selection</button>
-        <button type="button" id="closeBuffsPopup">Close</button>
       </div>
 
       <div class="label-row">
