@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleBuffsButton = document.getElementById('toggleBuffs');
     const buffsPopup = document.getElementById('buffsPopup');
     const submitBuffsButton = document.getElementById('submitBuffs');
-    const closeBuffsButton = document.getElementById('closeBuffsPopup');
     const selectedBuffsDisplay = toggleBuffsButton;
 
     let rawResourceValues = {};
@@ -194,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
               e.preventDefault();
               if (buffsPopup.style.display === 'block') {
                   buffsPopup.style.display = 'none';
-                  toggleBuffsButton.textContent = `Apply or Select Buffs`;
+                  toggleBuffsButton.textContent = `Select Buffs`;
               } else {
                   buffsPopup.style.display = 'block';
                   toggleBuffsButton.textContent = `Close Buff Selection`;
@@ -220,15 +219,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 buffsPopup.style.display = 'none';
             });
 
-            closeBuffsButton.addEventListener('click', function() {
-              buffsPopup.style.display = 'none';
-            });
+            // closeBuffsButton.addEventListener('click', function() {
+            //   buffsPopup.style.display = 'none';
+            // });
 
             function updateSelectedBuffDisplay() {
               if (selectedBuffs.length > 0) {
                   toggleBuffsButton.textContent = `${selectedBuffs.length} Buff(s) Applied: ${selectedBuffs.join(', ')}`;
               } else {
-                  toggleBuffsButton.textContent = `Apply or Select Buffs`;
+                  toggleBuffsButton.textContent = `Select Buffs`;
               }
             }
 
