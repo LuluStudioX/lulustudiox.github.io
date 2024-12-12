@@ -1,0 +1,261 @@
+{
+  "schedule": [
+    {
+      "day": 1,
+      "tasks": [
+        {
+          "description": "Raise Chief Gear Charm max score by 1",
+          "points": 70
+        },
+        {
+          "description": "Use 1 Fire Crystals to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "description": "Use 1 Fire Crystal Shards for Research",
+          "points": 1000
+        },
+        {
+          "description": "Use 1m of Speedups for Construction",
+          "points": 30
+        },
+        {
+          "description": "Use 1m of Speedups for Research",
+          "points": 30
+        },
+        {
+          "description": "Use 1m of Speedups for Training (Training, Promotion)",
+          "points": 30
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "tasks": [
+        {
+          "description": "Use 1 Fire Crystals to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "description": "Use 1 Fire Crystal Shards for Research",
+          "points": 1000
+        },
+        {
+          "description": "Use 1m of Speedups for Construction",
+          "points": 30
+        },
+        {
+          "description": "Use 1m of Speedups for Research",
+          "points": 30
+        },
+        {
+          "description": "Use 1m of Speedups for Training (Training, Promotion)",
+          "points": 30
+        },
+        {
+          "description": "Play Lucky Wheel 1 times",
+          "points": 8000
+        },
+        {
+          "description": "Use 1 Rare Hero Shards to ascend the Hero",
+          "points": 350
+        },
+        {
+          "description": "Use 1 Epic Hero Shards to ascend the Hero",
+          "points": 1220
+        },
+        {
+          "description": "Use 1 Mythic Hero Shards to ascend the Hero",
+          "points": 3040
+        },
+        {
+          "description": "Gather 1,000 Meat in the Wilderness",
+          "points": 2
+        },
+        {
+          "description": "Gather 1,000 Wood in the Wilderness",
+          "points": 2
+        },
+        {
+          "description": "Gather 200 Coal in the Wilderness",
+          "points": 2
+        },
+        {
+          "description": "Gather 50 Iron in the Wilderness",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "tasks": [
+        {
+          "description": "Pet advancement score increases by 1",
+          "points": 50
+        },
+        {
+          "description": "Use 1 Advanced Wild Marks to refine pets",
+          "points": 15000
+        },
+        {
+          "description": "Use 1 Common Wild Marks to refine pets",
+          "points": 1150
+        },
+        {
+          "description": "Raise Chief Gear Charm max score by 1",
+          "points": 70
+        },
+        {
+          "description": "Play Lucky Wheel 1 times",
+          "points": 8000
+        },
+        {
+          "description": "Use 1 Rare Hero Shards to ascend the Hero",
+          "points": 350
+        },
+        {
+          "description": "Use 1 Epic Hero Shards to ascend the Hero",
+          "points": 1220
+        },
+        {
+          "description": "Use 1 Mythic Hero Shards to ascend the Hero",
+          "points": 3040
+        },
+        {
+          "description": "Call rally and hunt down 1 Polar Terror",
+          "points": 30000
+        },
+        {
+          "description": "Defeat 1 Lv. 1 to 10 Beast",
+          "points": 9000
+        },
+        {
+          "description": "Defeat 1 Lv. 11 to 15 Beast",
+          "points": 9750
+        },
+        {
+          "description": "Defeat 1 Lv. 16 to 20 Beast",
+          "points": 10500
+        },
+        {
+          "description": "Defeat 1 Lv. 21 to 25 Beast",
+          "points": 11250
+        },
+        {
+          "description": "Defeat 1 Lv. 26 to 30 Beast",
+          "points": 12000
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "tasks": [
+        {
+          "description": "Raise Chief Gear Charm max score by 1",
+          "points": 70
+        },
+        {
+          "description": "Use 1 Hero Gear Essence Stones",
+          "points": 4000
+        },
+        {
+          "description": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 8000
+        },
+        {
+          "description": "Train 1 Lv. 1 Troop(s)",
+          "points": 3
+        },
+        {
+          "description": "Train 1 Lv. 2 Troop(s)",
+          "points": 4
+        },
+        {
+          "description": "Train 1 Lv. 3 Troop(s)",
+          "points": 5
+        },
+        {
+          "description": "Train 1 Lv. 4 Troop(s)",
+          "points": 8
+        },
+        {
+          "description": "Train 1 Lv. 5 Troop(s)",
+          "points": 12
+        },
+        {
+          "description": "Train 1 Lv. 6 Troop(s)",
+          "points": 18
+        },
+        {
+          "description": "Train 1 Lv. 7 Troop(s)",
+          "points": 25
+        },
+        {
+          "description": "Train 1 Lv. 8 Troop(s)",
+          "points": 35
+        },
+        {
+          "description": "Train 1 Lv. 9 Troop(s)",
+          "points": 45
+        },
+        {
+          "description": "Train 1 Lv. 10 Troop(s)",
+          "points": 60
+        },
+        {
+          "description": "Train 1 Lv. 11 Troop(s)",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "tasks": [
+        {
+          "description": "Pet advancement score increases by 1",
+          "points": 50
+        },
+        {
+          "description": "Use 1 Advanced Wild Marks to refine pets",
+          "points": 15000
+        },
+        {
+          "description": "Use 1 Common Wild Marks to refine pets",
+          "points": 1150
+        },
+        {
+          "description": "Raise Chief Gear max score by 1",
+          "points": 36
+        },
+        {
+          "description": "Use 1 Hero Gear Essence Stones",
+          "points": 4000
+        },
+        {
+          "description": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 8000
+        },
+        {
+          "description": "Use 1 Fire Crystals to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "description": "Use 1 Fire Crystal Shards for Research",
+          "points": 1000
+        },
+        {
+          "description": "Use 1m of Speedups for Construction",
+          "points": 30
+        },
+        {
+          "description": "Use 1m of Speedups for Research",
+          "points": 30
+        },
+        {
+          "description": "Use 1m of Speedups for Training (Training, Promotion)",
+          "points": 30
+        }
+      ]
+    }
+  ]
+}
