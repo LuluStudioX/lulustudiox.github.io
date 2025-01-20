@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         switch (buff) {
                             case 'Growth Skill':
-                                speedBuffPercentage += 200;
                                 capacityBuffPercentage += 200;
                                 break;
                             case 'President Skill':

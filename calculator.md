@@ -28,7 +28,7 @@ title: Troop Training Calculator
         <!-- Existing buff options -->
         <div class="buff-option">
             <input type="checkbox" id="growthSkill">
-            <label for="growthSkill">Growth Skill (200% Speed & Capacity)</label>
+            <label for="growthSkill">Growth Skill (200% Capacity)</label>
         </div>
         <div class="buff-option">
             <input type="checkbox" id="presidentSkill">
