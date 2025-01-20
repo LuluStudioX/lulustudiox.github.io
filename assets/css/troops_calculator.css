@@ -262,3 +262,25 @@ button {
   margin-bottom: 0;
   font-size: 1em;
 }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .buffs-popup {
+    width: 90%; /* Takes up 90% of the screen width */
+    max-width: none; /* Removes any max-width constraint */
+    left: 5%; /* Centers the popup horizontally */
+    transform: translateY(-50%); /* Centers vertically */
+    padding: 15px; /* Slightly reduced padding for mobile */
+  }
+
+  .buff-option label {
+    font-size: 0.9em; /* Slightly smaller font size for mobile */
+  }
+
+  .buff-option input[type='checkbox'] {
+    width: 1em;
+    height: 1em;
+    min-width: 16px;
+    min-height: 16px;
+  }
+}
