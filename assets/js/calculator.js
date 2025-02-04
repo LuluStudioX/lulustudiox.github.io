@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Calculate effective training speed and capacity
         const totalSpeedPercentage = trainingSpeed + speedBuffPercentage;
         const effectiveTrainingCapacity =
-          Math.max(trainingCapacity, 1) * (1 + capacityBuffPercentage / 100) +
-          flatCapacityIncrease;
+        ( Math.max(trainingCapacity, 1) +
+          flatCapacityIncrease ) * (1 + capacityBuffPercentage / 100) ;
 
         // Calculate training multiplier and max capacity
         const trainingMultiplier = 1 / (1 + totalSpeedPercentage / 100);
