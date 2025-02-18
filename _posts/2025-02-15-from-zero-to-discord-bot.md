@@ -108,7 +108,9 @@ This isn't just another bot project. It’s a journey that has profoundly impact
 4. **Version Control Expertise**: Gained advanced Git knowledge to manage a fast-evolving codebase.
 5. **Realizing the Power of Deployment**: Witnessing firsthand how Docker makes applications portable and stable.
 
-<a href="https://wakatime.com"><img src="https://wakatime.com/share/@e2c8a8d2-8732-430b-a08a-e45a6723983d/a527089b-c6a4-47c2-8216-d23905ec2821.png" /></a>
+<figure>
+  <img src="https://wakatime.com/share/@e2c8a8d2-8732-430b-a08a-e45a6723983d/a527089b-c6a4-47c2-8216-d23905ec2821.png" alt="WakaTime coding stats graph showing project progress over time">
+</figure>
 
 ### What's Next?
 
